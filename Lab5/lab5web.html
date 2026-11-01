@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Movies Watch List</title>
+  <link rel="stylesheet" href="lab5web.css">
+</head>
+<body>
+  <main>
+    <h1>Movies watch list</h1>
+    <p class="sub">Save the movies you've watched with your rating and review.</p>
+
+    <form id="f">
+      <div>
+        <label for="t">Movie title</label>
+        <input id="t" required maxlength="80" placeholder="e.g. Inception">
+      </div>
+      <div>
+        <label>Your rating</label>
+        <div class="stars" id="pick" role="radiogroup" aria-label="Star rating"></div>
+      </div>
+      <div>
+        <label for="r">Review</label>
+        <textarea id="r" maxlength="400" placeholder="What did you think?"></textarea>
+      </div>
+      <button class="add" type="submit">Add movie</button>
+    </form>
+
+    <div class="list" id="list"></div>
+  </main>
+
+  <script src="lab5web.js"></script>
+</body>
+</html>

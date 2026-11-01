@@ -1,0 +1,120 @@
+body {
+  background-color: #f0f4f8;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.todo-container {
+  background: white;
+  width: 500px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+h2 { margin-top: 0; font-size: 18px; }
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+#new-todo {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#add-btn {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.tip {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 15px;
+}
+
+.filters {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.filter-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #555;
+  font-size: 14px;
+}
+
+.filter-btn.active { color: #3b82f6; font-weight: bold; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+li.completed span {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+li input[type="checkbox"] { margin-right: 15px; }
+
+li span {
+  flex: 1;
+  cursor: pointer;
+}
+
+li .delete-btn {
+  background: none;
+  border: none;
+  color: #ccc;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+li .delete-btn:hover { color: #ff4d4f; }
+
+.edit-input {
+  flex: 1;
+  padding: 4px;
+  margin-right: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: #666;
+}
+
+.action-buttons button {
+  border: 1px solid #ccc;
+  background: #fafafa;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 5px;
+}

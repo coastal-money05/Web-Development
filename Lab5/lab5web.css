@@ -1,0 +1,136 @@
+:root {
+  --bg: #f6f1ee;
+  --card: #fffdfb;
+  --ink: #2a1f24;
+  --muted: #7a6a70;
+  --accent: #8c2f4b;
+  --line: #e4d9d6;
+  --star: #f5a623;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.5;
+}
+
+main {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0 0 4px;
+  letter-spacing: -.01em;
+}
+
+.sub {
+  color: var(--muted);
+  margin: 0 0 20px;
+  font-family: system-ui, sans-serif;
+  font-size: .95rem;
+}
+
+form, .item {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 16px;
+}
+
+form {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 24px;
+  font-family: system-ui, sans-serif;
+}
+
+label { font-size: .85rem; color: var(--muted); }
+
+input, textarea {
+  width: 100%;
+  font: inherit;
+  padding: 9px 10px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+textarea { resize: vertical; min-height: 70px; }
+
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.stars { display: flex; gap: 2px; }
+
+.stars button {
+  background: none;
+  border: 0;
+  padding: 2px;
+  font-size: 1.8rem;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--line);
+}
+
+.stars button.on { color: var(--star); }
+
+.add {
+  background: var(--accent);
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+  padding: 10px 16px;
+  font: 600 1rem system-ui, sans-serif;
+  cursor: pointer;
+}
+.add:hover { opacity: .9; }
+
+.list { display: grid; gap: 12px; }
+
+.item { display: grid; gap: 4px; }
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: baseline;
+}
+
+.item h2 { font-size: 1.25rem; margin: 0; }
+
+.rate { font-size: 1.1rem; letter-spacing: 2px; }
+.rate small {
+  font: .8rem system-ui, sans-serif;
+  color: var(--muted);
+  letter-spacing: 0;
+  margin-left: 6px;
+}
+
+.review { margin: 4px 0 0; font-style: italic; color: var(--muted); }
+
+.rm {
+  justify-self: start;
+  margin-top: 6px;
+  background: none;
+  border: 1px solid var(--line);
+  color: var(--muted);
+  border-radius: 6px;
+  padding: 4px 10px;
+  font: .85rem system-ui, sans-serif;
+  cursor: pointer;
+}
+.rm:hover { color: var(--accent); border-color: var(--accent); }
+
+.empty {
+  text-align: center;
+  color: var(--muted);
+  padding: 28px 0;
+  font-family: system-ui, sans-serif;
+}
