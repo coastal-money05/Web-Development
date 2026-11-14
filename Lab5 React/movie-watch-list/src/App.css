@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f3f6;
+  color: #222;
+}
+
+.app {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #263b63;
+}
+
+.app > p {
+  text-align: center;
+}
+
+.add-movie {
+  display: flex;
+  gap: 10px;
+  margin: 25px 0;
+}
+
+input,
+select,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font: inherit;
+}
+
+.add-movie input {
+  flex: 1;
+  min-width: 0;
+}
+
+button {
+  padding: 10px 14px;
+  background: #263b63;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.movie-card {
+  background: white;
+  padding: 18px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.movie-card h2 {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.movie-card label {
+  display: block;
+  margin: 12px 0 6px;
+  font-weight: bold;
+}
+
+.movie-card textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.stars {
+  font-size: 22px;
+}
+
+@media (max-width: 500px) {
+  .app {
+    margin: 10px auto;
+  }
+
+  .add-movie {
+    flex-direction: column;
+  }
+}
